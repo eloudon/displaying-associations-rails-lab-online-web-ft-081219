@@ -1,6 +1,8 @@
-<h1>All Artists</h1>
+h1><%=@artist.name%></h1>
 <ul>
-<% @artists.each do |a| %>
-  <li><%= a.index_display_name%></li>
-<% end %>
+  <%@artist.songs.each do |s|%>
+    <li>
+      <%=link_to s.title, s%>
+    </li>
+  <% end %>
 </ul> 
