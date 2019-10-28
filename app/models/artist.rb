@@ -9,14 +9,3 @@ class Artist < ActiveRecord::Base
     self.name + " - " + self.song_count.to_s + " songs"
   end
 end
-
-
-
-def song_count
-    self.songs.count
-end
-
-def index_display_name
-    self.name + " - " + self.song_count.to_s + " songs"
- end
-end
